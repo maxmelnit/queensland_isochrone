@@ -1,0 +1,5 @@
+period,departure_time,included_points,excluded_points,walking_faster,about_equal,transit_faster,comparison_unavailable,direct_journey,one_transfer,two_transfers,median_walk_minutes,median_transit_minutes,median_difference_minutes
+Morning,08:00:00,8898,1303,525,456,7741,176,8383,351,0,32.36,18.73,12.69
+Daytime,12:00:00,8898,1303,818,228,7676,176,8614,120,0,32.36,19.68,11.42
+Evening,18:00:00,8898,1303,569,537,7616,176,8646,88,0,32.36,19.33,11.46
+Night,22:00:00,8898,1303,1005,226,7491,176,8691,39,0,32.36,20.32,11.29
