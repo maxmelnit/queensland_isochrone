@@ -6,10 +6,10 @@ import streamlit as st
 ASSET_DIR = Path(__file__).resolve().parent / "assets"
 
 PERIODS = {
-    "Morning · 8:00 am": "morning.png",
-    "Daytime · 12:00 pm": "daytime.png",
-    "Evening · 6:00 pm": "evening.png",
-    "Night · 10:00 pm": "night.png",
+    "Morning: 8:00 am": "morning.png",
+    "Daytime: 12:00 pm": "daytime.png",
+    "Evening: 6:00 pm": "evening.png",
+    "Night: 10:00 pm": "night.png",
 }
 
 
@@ -23,6 +23,8 @@ st.markdown(
     """
     <style>
       .stApp { background: #f3f5f7; }
+      header[data-testid="stHeader"],
+      [data-testid="stToolbar"] { display: none; }
       .block-container {
         max-width: 1120px;
         padding-top: .65rem;
