@@ -119,10 +119,10 @@ st.divider()
 st.subheader(f"{period} departure · {detail['time']}")
 
 metric_a, metric_b, metric_c, metric_d = st.columns(4)
-metric_a.metric("Mapped destinations", f"{included:,}")
+metric_a.metric("Destinations", f"{included:,}")
 metric_b.metric("Transit faster", f"{transit_share:.1f}%")
 metric_c.metric("Walking faster", f"{walking_share:.1f}%")
-metric_d.metric("Median advantage", f"{selected['median_difference_minutes']:.1f} min")
+metric_d.metric("Median advantage (min)", f"{selected['median_difference_minutes']:.1f}")
 
 st.markdown(
     """
@@ -202,4 +202,3 @@ with st.expander("Method and interpretation"):
         """,
         unsafe_allow_html=True,
     )
-
