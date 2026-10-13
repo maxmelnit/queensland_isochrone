@@ -25,14 +25,14 @@ st.markdown(
       .stApp { background: #f3f5f7; }
       .block-container {
         max-width: 1120px;
-        padding-top: 1.5rem;
-        padding-bottom: 2rem;
+        padding-top: .65rem;
+        padding-bottom: .65rem;
       }
       h1 {
         color: #162033;
-        font-size: clamp(1.65rem, 3vw, 2.35rem) !important;
+        font-size: clamp(1.45rem, 2.6vw, 2rem) !important;
         letter-spacing: -0.025em;
-        margin-bottom: .75rem !important;
+        margin-bottom: .3rem !important;
       }
       .legend {
         align-items: center;
@@ -41,7 +41,7 @@ st.markdown(
         flex-wrap: wrap;
         font-size: .9rem;
         gap: .7rem 1.15rem;
-        margin: 0 0 1rem;
+        margin: 0 0 .45rem;
       }
       .legend-item {
         align-items: center;
@@ -64,7 +64,19 @@ st.markdown(
         border-color: #162033;
         color: #162033;
       }
-      [data-testid="stImage"] img { border: 1px solid #c7ced7; }
+      [data-testid="stImage"] {
+        display: flex;
+        justify-content: center;
+      }
+      [data-testid="stImage"] img {
+        border: 1px solid #c7ced7;
+        height: auto !important;
+        max-height: calc(100vh - 205px);
+        max-height: calc(100dvh - 205px);
+        max-width: 100% !important;
+        object-fit: contain;
+        width: auto !important;
+      }
       footer { visibility: hidden; }
     </style>
     """,
