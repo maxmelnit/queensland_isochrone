@@ -1,7 +1,7 @@
 # Brisbane travel-time dashboard
 
-This Streamlit app presents four precomputed travel-time comparisons for central
-Brisbane. It does not contain or require the Google Maps API key.
+This Streamlit app presents four precomputed travel-time maps for central Brisbane
+in a simple tabbed viewer. It does not contain or require the Google Maps API key.
 
 Run it locally from the repository root:
 
